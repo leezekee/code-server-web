@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+}
+
+@layer utilities {
+    /* container的高度 */
+    .ch-f {
+        height: calc(100vh - 58px);
+    }
+    /* header的高度 */
+    .hh-f {
+        height: 48px;
+    }
+    /* header中元素高度 */
+    .hi-f {
+        height: 32px;
+    }
+    /* 全屏 */
+    .fs {
+        height: 100vh;
+        width: 100%;
+    }
+    .ih {
+        width: 95%;
+        height: 40px;
+        color: transparent;
+    }
+    .cp {
+        clip-path: polygon(0% 0%, 0% 100%, 3% 100%, 3% 1%, 10% 1%, 10% 6%, 3% 6%, 3% 100%, 100% 100%, 100% 0%);
+    }
+}
