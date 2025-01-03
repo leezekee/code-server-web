@@ -39,7 +39,6 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 bin/*
-.idea/*
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -48,3 +47,4 @@ bin/*
 *.njsproj
 *.sln
 *.sw?
+/backend/.idea
