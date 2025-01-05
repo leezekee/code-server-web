@@ -20,7 +20,7 @@
 
 ## 第二周任务
 
-:black_square_button:添加前端欢迎界面
+:white_check_mark:添加前端欢迎界面
 
 :black_square_button:添加前端复制粘贴监听
 
