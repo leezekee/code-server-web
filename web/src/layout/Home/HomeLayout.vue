@@ -1,5 +1,7 @@
+<!-- 总体布局 -->
 <template>
     <Space direction="vertical" :style="{ width: '100%', height: '100vh' }" :size="[0, 48]">
+        <!-- 上下布局 -->
         <Layout>
             <LayoutHeader :style="headerStyle">
                 <navbar 

@@ -12,7 +12,9 @@ import 'ant-design-vue/dist/reset.css';
 import './index.css'
 import App from './App.vue'
 
+// 状态管理
 const pinia = createPinia()
+// 持久化
 pinia.use(piniaPluginPersistedstate)
 
 const app = createApp(App)

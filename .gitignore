@@ -48,3 +48,4 @@ bin/*
 *.sln
 *.sw?
 /backend/.idea
+backend/docker/server_20240430.tar

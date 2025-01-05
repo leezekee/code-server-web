@@ -1,3 +1,5 @@
+<!-- 导航栏 -->
+<!-- 要保证左右元素总宽度一致，才能保证中间元素在正中间 -->
 <template>
     <Toolbar class="toolbar">
         <template #start>

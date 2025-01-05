@@ -1,4 +1,5 @@
 <template>
+    <!-- 横向布局 -->
     <Splitter class="container-wrapper">
         <SplitterPanel class="container"> 
             <slot name="l"></slot> 

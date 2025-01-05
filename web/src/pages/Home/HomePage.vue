@@ -1,5 +1,5 @@
 <template>
-    <MainLayout 
+    <HomeLayout 
         @click:info="handleInfoClick"
         @click:refresh="handleRefreshClick"
         @click:mode="handleModeClick"
@@ -12,7 +12,7 @@
         <template #right>
             <VscodePage />
         </template>
-    </MainLayout>
+    </HomeLayout>
 
     <Teleport to="body">
         <!-- ===================以下均为对话框======================== -->
@@ -30,14 +30,14 @@
 </template>
 
 <script setup>
-import MainLayout from '@/layout/MainLayout.vue';
+import HomeLayout from '@/layout/Home/HomeLayout.vue';
 import LeaveDialog from '@/components/dialogs/LeaveDialog.vue';
 import InfoDialog from '@/components/dialogs/InfoDialog.vue';
 import RefreshDialog from '@/components/dialogs/RefreshDialog.vue';
 import ModeDialog from '@/components/dialogs/ModeDialog.vue';
 import ExitDialog from '@/components/dialogs/ExitDialog.vue';
-import OJPage from '@/pages/OJPage.vue';
-import VscodePage from '@/pages/VscodePage.vue';
+import OJPage from '@/pages/Home/components/OJPage.vue';
+import VscodePage from '@/pages/Home/components/VscodePage.vue';
 import Introduce from '@/components/Introduce.vue'
 import { ref } from 'vue';
 
