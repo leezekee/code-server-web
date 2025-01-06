@@ -1,14 +1,19 @@
 package main
 
 import (
+	_ "backend/config" // 引入配置文件执行init函数
+	_ "backend/db"     // 引入数据库执行init函数
 	"backend/router"
 	"github.com/gin-gonic/gin"
+	"github.com/spf13/viper"
 )
 
 func main() {
-	// TODO: 初始化配置、连接数据库
-
 	server := gin.Default()
 	server = router.CollectRoute(server)
-	panic(server.Run(":8080"))
+	port := viper.GetString("server.port")
+	if port != "" {
+		panic(server.Run(":" + port))
+	}
+	panic(server.Run())
 }

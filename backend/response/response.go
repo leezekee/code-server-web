@@ -25,3 +25,7 @@ func SuccessWithoutData(ctx *gin.Context, message string) {
 func Fail(ctx *gin.Context, code code.StatusCode, data gin.H, message string) {
 	Response(ctx, http.StatusOK, code, data, message)
 }
+
+func FailTest(ctx *gin.Context, message string) {
+	Response(ctx, http.StatusOK, code.OK, nil, message)
+}
