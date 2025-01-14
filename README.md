@@ -24,11 +24,15 @@
 
 :white_check_mark:完成后端数据库Redis连接设置
 
-:black_square_button:添加前端复制粘贴监听
-
-:black_square_button:完成JavaA&Golang性能对比测试
+:white_check_mark:添加前端复制粘贴监听
 
 :white_check_mark:部署k8s
 
 :black_square_button:完成申请使用接口
   
+
+## 第三周任务
+
+:black_square_button:完成JavaA&Golang性能对比测试
+
+:black_square_button:学习K8s及docker
