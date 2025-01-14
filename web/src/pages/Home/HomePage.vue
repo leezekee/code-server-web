@@ -7,10 +7,10 @@
         @click:exit="handleExitClick"
     >
         <template #left>
-            <OJPage />
+            <OJPage ref="OJ"/>
         </template>
         <template #right>
-            <VscodePage />
+            <VscodePage ref="VSC"/>
         </template>
     </HomeLayout>
 
@@ -39,7 +39,8 @@ import ExitDialog from '@/components/dialogs/ExitDialog.vue';
 import OJPage from '@/pages/Home/components/OJPage.vue';
 import VscodePage from '@/pages/Home/components/VscodePage.vue';
 import Introduce from '@/components/Introduce.vue'
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import { ListenType, newListener } from '@/utils/pasteboardListener';
 
 const leaveDialogVisible = ref(false);
 const infoDialogVisible = ref(false);
@@ -47,6 +48,24 @@ const refreshDialogVisible = ref(false);
 const modeDialogVisible = ref(false);
 const exitDialogVisible = ref(false);
 
+const OJ = ref(null);
+const VSC = ref(null);
+
+// ==================监听剪贴板======================
+/** example:
+const listener = newListener();
+
+
+const handlePaste = (data) => {
+    console.log('Paste:', data);
+};
+
+onMounted(() => {
+    listener.mount(window, ListenType.PASTE, handlePaste);
+    listener.start();
+});
+*/
+// ================================================
 
 // ==================打开对话框======================
 const handleInfoClick = () => {
